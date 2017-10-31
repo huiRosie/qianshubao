@@ -1,0 +1,18 @@
+  <template name="newsList">
+  <block wx:for="{{newsList}}" wx:key="newsList" >
+    <view class='newsItem' data-id='{{item.newsId}}' catchtap='viewNewsDetail'>
+      <view class='newsItemLeft'>
+        <view class='newsItemTitle'>{{item.title}}</view>
+        <view class='newsItemDesc'>
+          <view class='newsItemFrom'>{{item.source}}</view>
+          <view class='newsItemClass'>{{item.newsType}}</view>
+          <view class='newsItemRead'>{{item.viewCount}}次阅读</view>
+          <view class='newsItemTime'>{{item.pubtime.slice(0,10)}}</view>
+        </view>
+      </view>
+      <view class='newsItemRight'>
+        <image class='newsItemImg' src='{{item.logo}}' />
+      </view>
+    </view>
+  </block>
+</template>  

@@ -1,0 +1,23 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='newsDetail'>
+  <view class='newsDetailTitle'>{{newsDetail.title}}</view>
+  <view class='newsDetailMes'>
+    <text class='newsDetailFrom'>{{newsDetail.source}}</text>
+    <text class='newsDetailClass'>{{newsDetail.newsType}}</text>
+    <text class='newsDetailRead'>{{newsDetail.viewCount}}次阅读</text>
+    <text class='newsDetailTime'>{{newsDetail.pubtime}}</text>
+  </view>
+  <view class='viewDetailContent'>
+     <!-- {{newsDetail.content}}  -->
+    <view class="wxParse">
+        <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+    </view> 
+  </view>
+  <view class="newsDetailhotArticle">
+    <view class="hotArticleTitle">相关热门文章</view>
+    <view class="hotArticleList" id="hotArticleList">
+      <import src="../../component/newsList/newsList.wxml"/>
+      <template is="newsList" data='{{newsList:newsList}}' />
+    </view>
+  </view>
+</view>

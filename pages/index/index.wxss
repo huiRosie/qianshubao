@@ -1,0 +1,198 @@
+@import "../../component/productList/productList.wxss";
+@import "../../component/newsList/newsList.wxss";
+
+/**index.wxss**/
+.backgroundGray{
+  width: 100%;
+  height: 20rpx;
+  background: rgb(242, 242, 242);
+}
+
+swiper{
+  width:100%;
+  height:360rpx;
+}
+.slide-image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.productClass{
+  width: 100%;
+  height: 180rpx;
+  padding:50rpx 60rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.productClassItem{
+  width:290rpx;
+  height: 80rpx;
+  float: left;
+}
+
+.productClassItem:first-child{
+  margin-right:30rpx;
+}
+
+.productClassIcon{
+  width:70rpx;
+  height:80rpx;
+  float: left;
+}
+
+.productClassIconImgFirst{
+  width: 44rpx;
+  height: 44rpx;
+  margin: 16rpx 20rpx 18rpx 0;
+}
+
+.productClassIconImgSecond{
+  width: 40rpx;
+  height: 34rpx;
+  margin: 23rpx 26rpx 23rpx 0;
+}
+
+.productClassText{
+  width: 220rpx;
+  height:80rpx;
+  float: left;
+}
+
+.productClassName{
+  width: 100%;
+  height: 30rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  color: rgb(51, 52, 64);
+  margin-bottom:16rpx;
+}
+
+.productClassDesc{
+  width: 100%;
+  height: 24rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: rgb(153, 153, 153);
+}
+
+.payAnnounce{
+  width: 100%;
+  height: 86rpx;
+  padding:30rpx;
+  box-sizing: border-box;
+}
+
+.payAnnounceImg{
+  width: 104rpx;
+  height: 26rpx;
+  display: block;
+  float: left;
+  margin-right: 20rpx;
+}
+
+.swiperContainer2{
+  width: 528rpx;
+  height: 26rpx;
+  float: left;
+  font-size: 24rpx;
+  line-height: 26rpx;
+  color: rgb(102, 102, 102);
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.payAnnounceName{
+  float: left;
+  margin-right: 10rpx;
+}
+
+.payAnnounceMoneyLeft{
+  float: left;
+}
+
+.payAnnounceMoney{
+  float: left;
+  color: rgb(253, 82, 52);
+}
+
+.payAnnounceMoneyRight{
+  float: left;
+  margin-right: 10rpx;
+}
+
+.payAnnounceProduct{
+  float: left;
+}
+
+.hotProduct{
+  width: 100%;
+}
+
+.hotProductTop{
+  width: 100%;
+  height: 90rpx;
+  padding: 30rpx;
+  line-height: 30rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.hotProductTitle{
+  font-size: 30rpx;
+  float: left;
+  color: rgb(51, 52, 64);
+  font-weight: 600;
+}
+
+.hotProductDesc{
+  font-size:24rpx;
+  float: right;
+  color: rgb(153, 153, 153);
+}
+
+.hotProductBottom{
+  width: 100%;
+  height:80rpx ;
+  line-height:80rpx ;
+  font-size: 24rpx;
+  text-align: center;
+  color: rgb(253, 82, 52);
+}
+
+news{
+  width: 100%;
+  height: auto;
+}
+
+.newsTop{
+  width: 100%;
+  height: 90rpx;
+  padding: 30rpx;
+  line-height: 30rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.newsTitle{
+  font-size: 30rpx;
+  float: left;
+  color: rgb(51, 52, 64);
+  font-weight: 600;
+}
+
+.newsDesc{
+  font-size:24rpx;
+  float: right;
+  color: rgb(153, 153, 153);
+}
+
+.newsBottom{
+  width: 100%;
+  height:80rpx ;
+  line-height:80rpx ;
+  font-size: 24rpx;
+  text-align: center;
+  color: rgb(153, 153, 153);
+}

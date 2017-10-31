@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/messages/messages",
+    "pages/circle/circle",
+    "pages/my/my",
+    "pages/newsDetail/newsDetail"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#eeeeee",
+    "navigationBarBackgroundColor": "#fe7557",
+    "navigationBarTitleText": "钱书宝",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "icons/images/ic_home_d_copy_3.png",
+        "selectedIconPath": "icons/images/ic_home_c_copy.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/messages/messages",
+        "iconPath": "icons/images/ic_communication_d.png",
+        "selectedIconPath": "icons/images/ic_communication_c.png",
+        "text": "资讯"
+      },
+      {
+        "pagePath": "pages/circle/circle",
+        "iconPath": "icons/images/ic_circle_d_copy.png",
+        "selectedIconPath": "icons/images/ic_circle_c_copy_3.png",
+        "text": "圈子"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "icons/images/ic_my_d_copy_3.png",
+        "selectedIconPath": "icons/images/ic_my_c.png",
+        "text": "我的"
+      }
+    ],
+    "color":"#888F9B",
+    "selectedColor":"#fd5434",
+    "backgroundColor":"#fff",
+    "position":"bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

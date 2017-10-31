@@ -1,0 +1,470 @@
+
+
+<template name="circleList">
+  <block >
+    <view class="cells circleList">
+      <block >
+        <view class='circleItemBox'>
+          <view class='circleItem'>
+            <view class='circleItemTop'>
+              <image class='circleItemImg' src='../../icons/images/ic_circle_c_copy_3.png' />
+              <view class='circleItemTopRight'>
+                <view class='circleItemName'>张晓晓</view>
+                <view class='circlrItemInfo'>华四投资顾问有限公司 销售经理</view> 
+              </view>
+            </view>
+            <view class='circleItemContent'>
+              <text>江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地;江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地.
+              </text>
+            </view>
+            <view class='circleItemContentBtn'>全文</view>
+            <view class='circleItemCommentList'>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>这个项目特别好</text>
+              </view>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenOwner'>张晓晓 </text>回复
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>是的，数量有限，赶紧认购吧</text>
+              </view>
+            </view>
+            <view class='circleItemCommenBtn'>查看全部8条评论</view>
+            <view class='circleItemBottom'>
+              <view class='circleItemTime'>3小时前</view>
+              <view class='circleItemOperate'>
+                <view class='circleItemLike circleItemOperateItem'>
+                  <image src='../../icons/images/icCircleThumbCopy4.png' />
+                  <text class='circleItemLikeNum'>30</text>
+                </view>
+                <view class='circleItemReview circleItemOperateItem'>
+                  <image src='../../icons/images/icComment.png' />
+                  <text class='circleItemReviewNum'>30</text>
+                </view>
+                <view class='circleItemTranspond circleItemOperateItem'>
+                  <image src='../../icons/images/icForwardCopy6.png' />
+                  <text class='circleItemTranspondNum'>30</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='circleItemMargin'></view>
+        </view>
+        <view class='circleItemBox'>
+          <view class='circleItem'>
+            <view class='circleItemTop'>
+              <image class='circleItemImg' src='../../icons/images/ic_circle_c_copy_3.png' />
+              <view class='circleItemTopRight'>
+                <view class='circleItemName'>张晓晓</view>
+                <view class='circlrItemInfo'>华四投资顾问有限公司 销售经理</view> 
+              </view>
+            </view>
+            <view class='circleItemContent'>
+              <text>江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地;江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地.
+              </text>
+            </view>
+            <view class='circleItemContentBtn'>全文</view>
+            <view class='circleItemCommentList'>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>这个项目特别好</text>
+              </view>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenOwner'>张晓晓 </text>回复
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>是的，数量有限，赶紧认购吧</text>
+              </view>
+            </view>
+            <view class='circleItemCommenBtn'>查看全部8条评论</view>
+            <view class='circleItemBottom'>
+              <view class='circleItemTime'>3小时前</view>
+              <view class='circleItemOperate'>
+                <view class='circleItemLike circleItemOperateItem'>
+                  <image src='../../icons/images/icCircleThumbCopy4.png' />
+                  <text class='circleItemLikeNum'>30</text>
+                </view>
+                <view class='circleItemReview circleItemOperateItem'>
+                  <image src='../../icons/images/icComment.png' />
+                  <text class='circleItemReviewNum'>30</text>
+                </view>
+                <view class='circleItemTranspond circleItemOperateItem'>
+                  <image src='../../icons/images/icForwardCopy6.png' />
+                  <text class='circleItemTranspondNum'>30</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='circleItemMargin'></view>
+        </view>
+        <view class='circleItemBox'>
+          <view class='circleItem'>
+            <view class='circleItemTop'>
+              <image class='circleItemImg' src='../../icons/images/ic_circle_c_copy_3.png' />
+              <view class='circleItemTopRight'>
+                <view class='circleItemName'>张晓晓</view>
+                <view class='circlrItemInfo'>华四投资顾问有限公司 销售经理</view> 
+              </view>
+            </view>
+            <view class='circleItemContent'>
+              <text>江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地;江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地.
+              </text>
+            </view>
+            <view class='circleItemContentBtn'>全文</view>
+            <view class='circleItemCommentList'>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>这个项目特别好</text>
+              </view>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenOwner'>张晓晓 </text>回复
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>是的，数量有限，赶紧认购吧</text>
+              </view>
+            </view>
+            <view class='circleItemCommenBtn'>查看全部8条评论</view>
+            <view class='circleItemBottom'>
+              <view class='circleItemTime'>3小时前</view>
+              <view class='circleItemOperate'>
+                <view class='circleItemLike circleItemOperateItem'>
+                  <image src='../../icons/images/icCircleThumbCopy4.png' />
+                  <text class='circleItemLikeNum'>30</text>
+                </view>
+                <view class='circleItemReview circleItemOperateItem'>
+                  <image src='../../icons/images/icComment.png' />
+                  <text class='circleItemReviewNum'>30</text>
+                </view>
+                <view class='circleItemTranspond circleItemOperateItem'>
+                  <image src='../../icons/images/icForwardCopy6.png' />
+                  <text class='circleItemTranspondNum'>30</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='circleItemMargin'></view>
+        </view>
+        <view class='circleItemBox'>
+          <view class='circleItem'>
+            <view class='circleItemTop'>
+              <image class='circleItemImg' src='../../icons/images/ic_circle_c_copy_3.png' />
+              <view class='circleItemTopRight'>
+                <view class='circleItemName'>张晓晓</view>
+                <view class='circlrItemInfo'>华四投资顾问有限公司 销售经理</view> 
+              </view>
+            </view>
+            <view class='circleItemContent'>
+              <text>江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地;江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地.
+              </text>
+            </view>
+            <view class='circleItemContentBtn'>全文</view>
+            <view class='circleItemCommentList'>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>这个项目特别好</text>
+              </view>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenOwner'>张晓晓 </text>回复
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>是的，数量有限，赶紧认购吧</text>
+              </view>
+            </view>
+            <view class='circleItemCommenBtn'>查看全部8条评论</view>
+            <view class='circleItemBottom'>
+              <view class='circleItemTime'>3小时前</view>
+              <view class='circleItemOperate'>
+                <view class='circleItemLike circleItemOperateItem'>
+                  <image src='../../icons/images/icCircleThumbCopy4.png' />
+                  <text class='circleItemLikeNum'>30</text>
+                </view>
+                <view class='circleItemReview circleItemOperateItem'>
+                  <image src='../../icons/images/icComment.png' />
+                  <text class='circleItemReviewNum'>30</text>
+                </view>
+                <view class='circleItemTranspond circleItemOperateItem'>
+                  <image src='../../icons/images/icForwardCopy6.png' />
+                  <text class='circleItemTranspondNum'>30</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='circleItemMargin'></view>
+        </view>
+        <view class='circleItemBox'>
+          <view class='circleItem'>
+            <view class='circleItemTop'>
+              <image class='circleItemImg' src='../../icons/images/ic_circle_c_copy_3.png' />
+              <view class='circleItemTopRight'>
+                <view class='circleItemName'>张晓晓</view>
+                <view class='circlrItemInfo'>华四投资顾问有限公司 销售经理</view> 
+              </view>
+            </view>
+            <view class='circleItemContent'>
+              <text>江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地;江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地.
+              </text>
+            </view>
+            <view class='circleItemContentBtn'>全文</view>
+            <view class='circleItemCommentList'>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>这个项目特别好</text>
+              </view>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenOwner'>张晓晓 </text>回复
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>是的，数量有限，赶紧认购吧</text>
+              </view>
+            </view>
+            <view class='circleItemCommenBtn'>查看全部8条评论</view>
+            <view class='circleItemBottom'>
+              <view class='circleItemTime'>3小时前</view>
+              <view class='circleItemOperate'>
+                <view class='circleItemLike circleItemOperateItem'>
+                  <image src='../../icons/images/icCircleThumbCopy4.png' />
+                  <text class='circleItemLikeNum'>30</text>
+                </view>
+                <view class='circleItemReview circleItemOperateItem'>
+                  <image src='../../icons/images/icComment.png' />
+                  <text class='circleItemReviewNum'>30</text>
+                </view>
+                <view class='circleItemTranspond circleItemOperateItem'>
+                  <image src='../../icons/images/icForwardCopy6.png' />
+                  <text class='circleItemTranspondNum'>30</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='circleItemMargin'></view>
+        </view>
+        <view class='circleItemBox'>
+          <view class='circleItem'>
+            <view class='circleItemTop'>
+              <image class='circleItemImg' src='../../icons/images/ic_circle_c_copy_3.png' />
+              <view class='circleItemTopRight'>
+                <view class='circleItemName'>张晓晓</view>
+                <view class='circlrItemInfo'>华四投资顾问有限公司 销售经理</view> 
+              </view>
+            </view>
+            <view class='circleItemContent'>
+              <text>江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地;江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地.
+              </text>
+            </view>
+            <view class='circleItemContentBtn'>全文</view>
+            <view class='circleItemCommentList'>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>这个项目特别好</text>
+              </view>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenOwner'>张晓晓 </text>回复
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>是的，数量有限，赶紧认购吧</text>
+              </view>
+            </view>
+            <view class='circleItemCommenBtn'>查看全部8条评论</view>
+            <view class='circleItemBottom'>
+              <view class='circleItemTime'>3小时前</view>
+              <view class='circleItemOperate'>
+                <view class='circleItemLike circleItemOperateItem'>
+                  <image src='../../icons/images/icCircleThumbCopy4.png' />
+                  <text class='circleItemLikeNum'>30</text>
+                </view>
+                <view class='circleItemReview circleItemOperateItem'>
+                  <image src='../../icons/images/icComment.png' />
+                  <text class='circleItemReviewNum'>30</text>
+                </view>
+                <view class='circleItemTranspond circleItemOperateItem'>
+                  <image src='../../icons/images/icForwardCopy6.png' />
+                  <text class='circleItemTranspondNum'>30</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='circleItemMargin'></view>
+        </view>
+        <view class='circleItemBox'>
+          <view class='circleItem'>
+            <view class='circleItemTop'>
+              <image class='circleItemImg' src='../../icons/images/ic_circle_c_copy_3.png' />
+              <view class='circleItemTopRight'>
+                <view class='circleItemName'>张晓晓</view>
+                <view class='circlrItemInfo'>华四投资顾问有限公司 销售经理</view> 
+              </view>
+            </view>
+            <view class='circleItemContent'>
+              <text>江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地;江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地.
+              </text>
+            </view>
+            <view class='circleItemContentBtn'>全文</view>
+            <view class='circleItemCommentList'>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>这个项目特别好</text>
+              </view>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenOwner'>张晓晓 </text>回复
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>是的，数量有限，赶紧认购吧</text>
+              </view>
+            </view>
+            <view class='circleItemCommenBtn'>查看全部8条评论</view>
+            <view class='circleItemBottom'>
+              <view class='circleItemTime'>3小时前</view>
+              <view class='circleItemOperate'>
+                <view class='circleItemLike circleItemOperateItem'>
+                  <image src='../../icons/images/icCircleThumbCopy4.png' />
+                  <text class='circleItemLikeNum'>30</text>
+                </view>
+                <view class='circleItemReview circleItemOperateItem'>
+                  <image src='../../icons/images/icComment.png' />
+                  <text class='circleItemReviewNum'>30</text>
+                </view>
+                <view class='circleItemTranspond circleItemOperateItem'>
+                  <image src='../../icons/images/icForwardCopy6.png' />
+                  <text class='circleItemTranspondNum'>30</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='circleItemMargin'></view>
+        </view>
+        <view class='circleItemBox'>
+          <view class='circleItem'>
+            <view class='circleItemTop'>
+              <image class='circleItemImg' src='../../icons/images/ic_circle_c_copy_3.png' />
+              <view class='circleItemTopRight'>
+                <view class='circleItemName'>张晓晓</view>
+                <view class='circlrItemInfo'>华四投资顾问有限公司 销售经理</view> 
+              </view>
+            </view>
+            <view class='circleItemContent'>
+              <text>江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地;江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地.
+              </text>
+            </view>
+            <view class='circleItemContentBtn'>全文</view>
+            <view class='circleItemCommentList'>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>这个项目特别好</text>
+              </view>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenOwner'>张晓晓 </text>回复
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>是的，数量有限，赶紧认购吧</text>
+              </view>
+            </view>
+            <view class='circleItemCommenBtn'>查看全部8条评论</view>
+            <view class='circleItemBottom'>
+              <view class='circleItemTime'>3小时前</view>
+              <view class='circleItemOperate'>
+                <view class='circleItemLike circleItemOperateItem'>
+                  <image src='../../icons/images/icCircleThumbCopy4.png' />
+                  <text class='circleItemLikeNum'>30</text>
+                </view>
+                <view class='circleItemReview circleItemOperateItem'>
+                  <image src='../../icons/images/icComment.png' />
+                  <text class='circleItemReviewNum'>30</text>
+                </view>
+                <view class='circleItemTranspond circleItemOperateItem'>
+                  <image src='../../icons/images/icForwardCopy6.png' />
+                  <text class='circleItemTranspondNum'>30</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='circleItemMargin'></view>
+        </view>
+        <view class='circleItemBox'>
+          <view class='circleItem'>
+            <view class='circleItemTop'>
+              <image class='circleItemImg' src='../../icons/images/ic_circle_c_copy_3.png' />
+              <view class='circleItemTopRight'>
+                <view class='circleItemName'>张晓晓</view>
+                <view class='circlrItemInfo'>华四投资顾问有限公司 销售经理</view> 
+              </view>
+            </view>
+            <view class='circleItemContent'>
+              <text>江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地;江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地.
+              </text>
+            </view>
+            <view class='circleItemContentBtn'>全文</view>
+            <view class='circleItemCommentList'>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>这个项目特别好</text>
+              </view>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenOwner'>张晓晓 </text>回复
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>是的，数量有限，赶紧认购吧</text>
+              </view>
+            </view>
+            <view class='circleItemCommenBtn'>查看全部8条评论</view>
+            <view class='circleItemBottom'>
+              <view class='circleItemTime'>3小时前</view>
+              <view class='circleItemOperate'>
+                <view class='circleItemLike circleItemOperateItem'>
+                  <image src='../../icons/images/icCircleThumbCopy4.png' />
+                  <text class='circleItemLikeNum'>30</text>
+                </view>
+                <view class='circleItemReview circleItemOperateItem'>
+                  <image src='../../icons/images/icComment.png' />
+                  <text class='circleItemReviewNum'>30</text>
+                </view>
+                <view class='circleItemTranspond circleItemOperateItem'>
+                  <image src='../../icons/images/icForwardCopy6.png' />
+                  <text class='circleItemTranspondNum'>30</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='circleItemMargin'></view>
+        </view>
+        <view class='circleItemBox'>
+          <view class='circleItem'>
+            <view class='circleItemTop'>
+              <image class='circleItemImg' src='../../icons/images/ic_circle_c_copy_3.png' />
+              <view class='circleItemTopRight'>
+                <view class='circleItemName'>张晓晓</view>
+                <view class='circlrItemInfo'>华四投资顾问有限公司 销售经理</view> 
+              </view>
+            </view>
+            <view class='circleItemContent'>
+              <text>江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地;江苏润港收益9.9%，半年付息，资金用在利用国有企业的优势，布局华东市场，江苏润港石化并购并持有盐城新伦石化80%股权（另外20%是盐城国资委持有），在滨海港扩大炼化厂建设仓储基地.
+              </text>
+            </view>
+            <view class='circleItemContentBtn'>全文</view>
+            <view class='circleItemCommentList'>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>这个项目特别好</text>
+              </view>
+              <view class='circleItemCommen'>
+                <text class='circleItemCommenOwner'>张晓晓 </text>回复
+                <text class='circleItemCommenName'>张萌：</text>
+                <text class='circleItemCommenText'>是的，数量有限，赶紧认购吧</text>
+              </view>
+            </view>
+            <view class='circleItemCommenBtn'>查看全部8条评论</view>
+            <view class='circleItemBottom'>
+              <view class='circleItemTime'>3小时前</view>
+              <view class='circleItemOperate'>
+                <view class='circleItemLike circleItemOperateItem'>
+                  <image src='../../icons/images/icCircleThumbCopy4.png' />
+                  <text class='circleItemLikeNum'>30</text>
+                </view>
+                <view class='circleItemReview circleItemOperateItem'>
+                  <image src='../../icons/images/icComment.png' />
+                  <text class='circleItemReviewNum'>30</text>
+                </view>
+                <view class='circleItemTranspond circleItemOperateItem'>
+                  <image src='../../icons/images/icForwardCopy6.png' />
+                  <text class='circleItemTranspondNum'>30</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='circleItemMargin'></view>
+        </view>
+      </block>
+    </view>
+  </block>
+</template>

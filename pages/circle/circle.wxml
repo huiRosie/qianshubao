@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="circleTop">
+    <image class='circleEditImg' src='../../icons/images/ic_editor_copy_2.png' />
+    <text class="circleTitle">圈子</text>
+    <image class='circleMessageImg' src='../../icons/images/ic_circle_massege.png' />
+  </view>
+  <view class='circleMain'>
+    <import src='../../component/circleList/circleList.wxml' />
+    <template is='circleList' />
+  </view>
+</view>

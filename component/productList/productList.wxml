@@ -1,0 +1,77 @@
+<!-- <template name="productList">
+  <block wx:for="{{cells}}" wx:for-item="cellsItem" wx:for-index="cellsIndex" wx:key="cells">
+    <view class="cells">
+      <block wx:for="{{cellsItem}}" wx:for-item="cellItem" wx:for-index="cellIndex" wx:key="cells">
+        <view>
+
+        </view>
+      </block>
+    </view>
+  </block>
+</template> -->
+
+<template name="productList">
+  <block >
+    <view class="cells productList">
+      <block >
+        <view class='productItem'>
+          <view class='productTop'>
+            <image class='productImg' src='../../icons/image/abelRaise.png' />
+            <view class='productTitle'>恒大绿洲南宁集合资金信托计划</view>
+          </view>
+          <view class='productMain'>
+            <view class='productMainLeft'>
+              <view class='productRate'>9.80%</view>
+              <view class='productReturn'>预期年收益率</view>
+            </view>
+            <view class='productMainRight'>
+              <view class='productAll'>项目总额度100000万</view>
+              <view class='productOther'>
+                <view class='productTime'>投资期限 12/月</view>
+                <view class='productRequire'>资金门槛 100万/起</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='productItem'>
+          <view class='productTop'>
+            <image class='productImg' src='../../icons/image/abelRaise.png' />
+            <view class='productTitle'>恒大绿洲南宁集合资金信托计划</view>
+          </view>
+          <view class='productMain'>
+            <view class='productMainLeft'>
+              <view class='productRate'>9.80%</view>
+              <view class='productReturn'>预期年收益率</view>
+            </view>
+            <view class='productMainRight'>
+              <view class='productAll'>项目总额度100000万</view>
+              <view class='productOther'>
+                <view class='productTime'>投资期限 12/月</view>
+                <view class='productRequire'>资金门槛 100万/起</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='productItem'>
+          <view class='productTop'>
+            <image class='productImg' src='../../icons/image/abelRaise.png' />
+            <view class='productTitle'>恒大绿洲南宁集合资金信托计划</view>
+          </view>
+          <view class='productMain'>
+            <view class='productMainLeft'>
+              <view class='productRate'>9.80%</view>
+              <view class='productReturn'>预期年收益率</view>
+            </view>
+            <view class='productMainRight'>
+              <view class='productAll'>项目总额度100000万</view>
+              <view class='productOther'>
+                <view class='productTime'>投资期限 12/月</view>
+                <view class='productRequire'>资金门槛 100万/起</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </block>
+</template>

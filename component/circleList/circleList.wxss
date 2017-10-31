@@ -1,0 +1,119 @@
+.circleItem{
+  width: 100%;
+  padding:20rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.circleItemTop{
+  width: 100%;
+  height: 80rpx;
+  margin-bottom: 10rpx;
+}
+
+.circleItemImg{
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  border-radius:40rpx;
+  margin-right: 20rpx;
+}
+
+.circleItemTopRight{
+  width:590rpx;
+  height: 80rpx;
+  float: left;
+}
+
+.circleItemName{
+  font-size: 30rpx;
+  font-weight: 600;
+  height:40rpx;
+  line-height: 40rpx;
+}
+
+.circlrItemInfo{
+  font-size: 24rpx;
+  height:40rpx;
+  line-height: 40rpx;
+  color: rgb(102, 102, 102);
+}
+
+.circleItemContent{
+  width: 100%;
+  height: 176rpx;
+  line-height: 44rpx;
+  font-size: 30rpx;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:4;
+  display: -webkit-box;
+}
+
+.circleItemContentBtn{
+  font-size: 28rpx;
+  margin: 10rpx 0;
+  color: rgb(87,107,149);
+}
+
+.circleItemCommen{
+  font-size: 26rpx;
+  line-height: 36rpx;
+}
+
+.circleItemCommenName{
+  color: rgb(87,107,149);
+}
+
+.circleItemCommenOwner{
+  color: rgb(87,107,149);
+}
+
+.circleItemCommenBtn{
+  font-size: 26rpx;
+  line-height: 36rpx;
+  color: rgb(87,107,149);
+}
+
+.circleItemBottom{
+  height: 28rpx;
+  line-height: 28rpx;
+  margin: 10rpx 0;
+  font-size: 24rpx;
+  color: rgb(102,102,102);
+}
+
+.circleItemBottom image{
+  display: block;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.circleItemTime{
+  width: 150rpx;
+  float: left;
+}
+
+.circleItemOperate{
+  width: 540rpx;
+  float: left;
+}
+
+.circleItemOperateItem{
+  float: right;
+  margin-left: 50rpx;
+}
+
+.circleItemOperateItem image{
+  display: block;
+  float:left;
+  margin-right: 10rpx;
+}
+
+.circleItemMargin{
+  width: 100%;
+  height: 10rpx;
+  background: #f2f2f2;
+}

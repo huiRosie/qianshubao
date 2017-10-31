@@ -1,0 +1,13 @@
+<view class="container">
+  <view class='section section_gap'>
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+      <block wx:for='{{newsClassList}}' wx:key="newsClassList" >
+        <view class="scroll-view-item_H  {{item.categoryId == currentId ? 'scroll-view-item_hover' : ''}}" id='{{item.categoryId}}' catchtap="changeClass" >{{item.categoryName}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <scroll-view class='newsMain'>
+    <import src="../../component/newsList/newsList.wxml"/>
+    <template is="newsList" data="{{newsList:newsList}}" /> 
+  </scroll-view>
+</view>

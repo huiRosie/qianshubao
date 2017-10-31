@@ -1,0 +1,92 @@
+<!--index.wxml-->
+<!--首页banner轮播  -->
+<view class="container">
+  <view class="swiperContainer">
+    <swiper class='banner' indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="banner">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="180"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--产品分类  -->
+  <view class="productClass">
+    <block >
+      <view class='productClassItem'>
+        <view class="productClassIcon">
+          <image class="productClassIconImgFirst" src="../../icons/image/icTrust.png" />
+        </view>
+        <view class="productClassText">
+          <view class="productClassName">信托资管</view>
+          <view class="productClassDesc">预期收益安全 可靠</view>
+        </view>
+      </view>
+      <view class='productClassItem'>
+        <view class="productClassIcon">
+          <image class="productClassIconImgSecond" src="../../icons/image/icPrivate.png" />
+        </view>
+        <view class="productClassText">
+          <view class="productClassName">私募基金</view>
+          <view class="productClassDesc">资产优质 运营稳健</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!--打款公告  -->
+  <view class="payAnnounce">
+    <image class="payAnnounceImg" src="../../icons/image/icAnnouncement.png"  />
+    <view class="swiperContainer2">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical="true">
+        <block >
+          <swiper-item>
+            <view class="payAnnounceName">黄贤</view>
+            <view class="payAnnounceMoneyLeft">顺利成交客户</view>
+            <view class="payAnnounceMoney">100</view> 
+            <view class="payAnnounceMoneyRight">万元</view> 
+              
+            <view class="payAnnounceProduct">中能润刚1号投资</view>
+          </swiper-item>
+          <swiper-item>
+            <view class="payAnnounceName">黄贤</view>
+            <view class="payAnnounceMoneyLeft">顺利成交客户</view>
+            <view class="payAnnounceMoney">100</view> 
+            <view class="payAnnounceMoneyRight">万元</view> 
+              
+            <view class="payAnnounceProduct">中能润刚1号投资</view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!--灰色背景  -->
+  <view class='backgroundGray'></view>
+  <!--热门产品  -->
+  <view class="hotProduct">
+    <view class='hotProductTop'>
+      <view class='hotProductTitle'>热门产品</view>
+      <view class='hotProductDesc'>精选产品 科学配置</view>
+    </view>
+    <view class='hotProductMain'>
+      <import src="../../component/productList/productList.wxml"/>
+      <template is="productList" />
+    </view>
+    <view class='hotProductBottom'>查看更多热门产品</view>
+  </view>
+  <!--灰色背景  -->
+  <view class='backgroundGray'></view>
+  <!--新闻资讯  -->
+  <view class="news">
+    <view class='newsTop'>
+      <view class='newsTitle'>新闻资讯</view>
+      <view class='newsDesc'>金融资讯 推荐阅读</view>
+    </view>
+    <view class='newsMain'>
+      <import src="../../component/newsList/newsList.wxml"/>
+      <template is="newsList" data="{{newsList:newsList}}" />
+    </view>
+    <view class='newsBottom' catchtap='viewNewsList'>查看更多新闻资讯</view>
+  </view>
+</view>
