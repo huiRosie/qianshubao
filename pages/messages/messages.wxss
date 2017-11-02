@@ -6,6 +6,10 @@
   box-sizing: border-box;
   background-color:#f2f2f2;
   overflow: hidden;
+  position: fixed;  
+  z-index: 99;
+  top: 0;
+  left: 0;
 }
 
 .scroll-view_H{
@@ -28,10 +32,11 @@
   border-bottom: 2px solid #fd5434;
 }
 
-.usermotto{
+.newsMain{
   width: 100%;
-  height: 80rpx;
-  line-height: 80rpx;
-  padding:0 30rpx;
-   box-sizing: border-box; 
+  height:auto;
+  margin-top: 80rpx;
+  overflow: hidden;
+  /* padding:0 30rpx;
+   box-sizing: border-box;  */
 }
