@@ -1,6 +1,64 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view class="container">
+  <view class='userInfo'>
+    <view class='userInfoIcon'>
+      <view class='userInfoEdit icon'>
+        <image src='../../icons/images/bianji.png' />
+      </view>
+      <view class='userInfoSet icon'>
+        <image src='../../icons/images/shezhi.png' />
+      </view>
+    </view>
+    <view class='userImg'>
+      <image src='{{userInfo.avatarUrl}}' />
+    </view>
+    <view class='userNameBox'>
+      <text class='userName'>{{userInfo.nickName}} </text>
+      <text class='userCompany'>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class='userAcount'>
+    <view class='userAcountItem'>
+      <image class='userAcountItemImg' src='../../icons/images/icon_tixian.png'  />
+      <view class='userAcountItemName'>账户余额</view>
+    </view>
+    <view class='userAcountItem'>
+      <image class='userAcountItemImg myCard' src='../../icons/images/icon_wodeyinhangka.png'  />
+      <view class='userAcountItemName'>银行卡</view>
+    </view>
+    <view class='userAcountItem'>
+      <image class='userAcountItemImg' src='../../icons/images/icon_wodyuyue.png'  />
+      <view class='userAcountItemName'>我的预约</view>
+    </view>
+    <view class='userAcountItem'>
+      <image class='userAcountItemImg' src='../../icons/images/icon_wodeshoucang.png'  />
+      <view class='userAcountItemName'>我的收藏</view>
+    </view>
+  </view>
+  <view class='userOption'>
+    <view class='userOptionItem'>
+      <view class='userOptionItemName'>分享APP</view>
+      <view class='userOptionItemIcon'>
+        <image src='../../icons/images/iconNav.png' />
+      </view>
+    </view>
+    <view class='userOptionItem'>
+      <view class='userOptionItemName'>联系客服</view>
+      <view class='userOptionItemIcon'>
+        <image src='../../icons/images/iconNav.png' />
+      </view>
+    </view>
+    <view class='userOptionItem'>
+      <view class='userOptionItemName'>意见反馈</view>
+      <view class='userOptionItemIcon'>
+        <image src='../../icons/images/iconNav.png' />
+      </view>
+    </view>
+    <view class='userOptionItem'>
+      <view class='userOptionItemName'>关于我们</view>
+      <view class='userOptionItemIcon'>
+        <image src='../../icons/images/iconNav.png' />
+      </view>
+    </view>
+  </view>
 </view>

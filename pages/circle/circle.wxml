@@ -6,6 +6,7 @@
   </view>
   <view class='circleMain'>
     <import src='../../component/circleList/circleList.wxml' />
-    <template is='circleList' />
+    <template is='circleList' data='{{circleList:circleList}}' />
   </view>
+  <view class='circleBottom' hidden='{{visiable?false:true}}'>没有更多内容了</view>
 </view>

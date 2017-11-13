@@ -22,10 +22,16 @@ module.exports = {
       newsListUrl: ip +'/app/school/news/list',
       newsDetailUrl: ip +'/app/school/news/detail',
       latestNewsListUrl: ip +'/app/school/news/latest',
-        search: {
-            byKeyword: 'https://api.douban.com/v2/movie/search?q=', 
-            byTag: 'https://api.douban.com/v2/movie/search?tag='
-        }
+      circleListUrl: ip +'/app/active/list',
+      circleAddUrl: ip + '/app/active/comment/add',
+      circleCollectUrl: ip + '/app/active/collect',
+      circleVoteUrl: ip + '/app/active/vote',
+      circleMessageListUrl: ip +'/app/active/message/list',
+      loginUrl: ip +'/app/user/login'
+      // search: {
+      //     byKeyword: 'https://api.douban.com/v2/movie/search?q=', 
+      //     byTag: 'https://api.douban.com/v2/movie/search?tag='
+      // }
     },
     hotKeyword: ['功夫熊猫', '烈日灼心', '摆渡人', '长城', '我不是潘金莲', '这个杀手不太冷', '驴得水', '海贼王之黄金城', '西游伏妖片', '我在故宫修文物', '你的名字'],
     hotTag: ['动作', '喜剧', '爱情', '悬疑'],

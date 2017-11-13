@@ -1,8 +1,129 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+.container{
+  background: #f2f2f2;
+  height: 100%;
 }
-.log-item {
-  margin: 10rpx;
+
+.userInfo{
+  width: 100%;
+  height:320rpx;
+  padding:10rpx 40rpx 40rpx;
+  box-sizing: border-box;
+  /* background:#fe7557; */
+   background:rgb(254, 85, 86); 
+}
+
+.userInfoIcon{
+  width: 100%;
+  height: 56rpx;
+}
+
+.icon{
+  width: 56rpx;
+  height: 56rpx;
+  float: left;
+}
+
+.userInfoSet{
+  float: right;
+}
+
+.icon image{
+  display: block;
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.userImg{
+  width: 94rpx;
+  height: 94rpx;
+  border-radius: 47rpx;
+  margin: 0 auto 24rpx;
+}
+
+.userImg image{
+  display: block;
+  width:120rpx;
+  height:120rpx;
+  border-radius:60rpx;
+}
+
+.userNameBox{
+  text-align: center;
+  color: #fff;
+}
+
+.userName{
+  font-size:36rpx;
+}
+
+.userCompany{
+  font-size:30rpx;
+  /* color: #d9b4b4; */
+}
+
+.userAcount{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.userAcountItem{
+  width: 25%;
+  height: 108rpx;
+  padding: 40rpx 0;
+  float: left;
+}
+
+.userAcountItemImg{
+  display: block;
+  width:56rpx;
+  height:56rpx;
+  margin: 0 auto 10rpx;
+}
+
+.myCard{
+  width:64rpx;
+  height:44rpx;
+  margin:6rpx auto 16rpx;
+}
+
+.userAcountItemName{
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.userOption{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding:0 0 0 40rpx;
+  box-sizing: border-box;
+}
+
+.userOptionItem{
+  width: 100%;
+  height: 100rpx;
+  line-height:100rpx;
+  font-size: 28rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.userOptionItemName{
+  float: left;
+}
+
+.userOptionItemIcon{
+  width:100rpx;
+  font-size:36rpx;
+  text-align: center;
+  float: right;
+}
+
+.userOptionItemIcon image{
+  display: block;
+  width:20rpx;
+  height: 32rpx;
+  margin: 34rpx auto;
 }

@@ -1,9 +1,9 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/messages/messages",
     "pages/circle/circle",
     "pages/my/my",
+    "pages/messages/messages",
+    "pages/index/index",
     "pages/newsDetail/newsDetail"
 
   ],
@@ -12,7 +12,9 @@
     "backgroundColor": "#eeeeee",
     "navigationBarBackgroundColor": "#fe7557",
     "navigationBarTitleText": "钱书宝",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh ":true,
+    "onReachBottomDistance":50
   },
   "tabBar": {
     "list": [

@@ -1,13 +1,16 @@
 <view class="container">
-  <view class='section section_gap'>
+  <view class='section'>
     <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
       <block wx:for='{{newsClassList}}' wx:key="newsClassList" >
         <view class="scroll-view-item_H  {{item.categoryId == currentId ? 'scroll-view-item_hover' : ''}}" id='{{item.categoryId}}' catchtap="changeClass" >{{item.categoryName}}</view>
       </block>
     </scroll-view>
   </view>
-  <scroll-view class='newsMain'>
+  <view class='newsMain'>
     <import src="../../component/newsList/newsList.wxml"/>
     <template is="newsList" data="{{newsList:newsList}}" /> 
-  </scroll-view>
+  </view>
+  <view class='newsBottom' hidden='{{visiable?false:true}}'>没有更多内容了</view>
+  <!-- <import src="../../component/tip/tip.wxml"/>
+  <template is="tip" data="{{tip:tip}}" />  -->
 </view>

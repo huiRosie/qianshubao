@@ -1,4 +1,4 @@
-  <template name="newsList">
+<template name="newsList">
   <block wx:for="{{newsList}}" wx:key="newsList" >
     <view class='newsItem' data-id='{{item.newsId}}' catchtap='viewNewsDetail'>
       <view class='newsItemLeft'>

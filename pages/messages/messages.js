@@ -7,20 +7,41 @@ Page({
   data: {
     newsClassList:[],
     newsList:[],
-    currentId:0
+    currentId:0,
+    currentPage:1,
+    showLoading:true,
+    visiable:false
   },
   onLoad: function () {
-    fetch.fetchNewsClassList(config.apiList.newsClassListUrl,this)
-    fetch.fetchNewsList(config.apiList.newsListUrl, { categoryId: 0,numPerPage:20},this)
-   
+    var that = this
+    fetch.fetchNewsClassList(config.apiList.newsClassListUrl, that)
+    fetch.fetchNewsList(config.apiList.newsListUrl, { categoryId: 0, numPerPage: 10 }, that)
+       
   },
   changeClass:function(e){
-    // console.log(e);
+    var that = this
     let id = e.currentTarget.id;
+    console.log(id);
     if (id) {
-      this.setData({ currentId: id })
-      fetch.fetchNewsList(config.apiList.newsListUrl, { categoryId: id }, this)
+      that.setData({newsList: []})
+      that.setData({currentId:id})
+      fetch.fetchNewsList(config.apiList.newsListUrl,{categoryId:id}, that)
     }
+  },
+  onPullDownRefresh: function (e) {
+    // wx.showNavigationBarLoading()
+    // var that = this
+    // let id = e.currentTarget.id;
+    // that.setData({
+    //   showLoading:true
+    // })
+    // fetch.fetchNewsList(config.apiList.newsListUrl, { categoryId:id,currentPage:1, numPerPage: 10 },that)
+  },
+  onReachBottom:function(e){
+    var that = this
+    let id = that.data.currentId;
+    let currentPage = that.data.currentPage;
+    fetch.fetchNewsList(config.apiList.newsListUrl, { categoryId:id, currentPage: currentPage, numPerPage: 10 }, that)
   },
   upper: function (e) {
     console.log(e)

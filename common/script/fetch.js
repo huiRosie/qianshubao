@@ -30,12 +30,23 @@ function fetchNewsList(url, datas,that) {
     data: datas,
     method: 'GET',
     success: function (res) {
-      that.setData({
-        newsList: res.data.data
-      })
-      // console.log(that);
+      // console.log(res.data.data);
+      if(res.data.data.length==0){
+        that.setData({
+          visiable:true
+        });
+        wx.stopPullDownRefresh();
+      }else{
+        that.setData({
+          newsList:that.data.newsList.concat(res.data.data),
+          currentPage: ++that.data.currentPage
+        })
+      }
+      
+      
     },
     fail: function () {
+      console.log(res.data.data)
       // message.show.call(that, {
       //   content: '网络开小差了',
       //   icon: 'offline',
@@ -102,9 +113,73 @@ function fetchLatestNewsList(url, datas, that) {
   })
 }
 
+// 手机号登陆，查看圈子
+function fetchLogin(url,datas,that){
+  wx.request({
+    url: url,
+    data: datas,
+    method: 'POST',
+    success: function (res) {
+      console.log(res.data);
+      if (res.data.data.length == 0) {
+
+      } else {
+        that.setData({
+         
+        })
+      }
+    },
+    fail: function () {
+      console.log(res)
+    }
+  })
+}
+
+// 获取圈子列表
+function fetchCircleList(url, datas, that) {
+  wx.request({
+    url: url,
+    data: datas,
+    method: 'GET',
+    success: function (res) {
+      console.log(res.data.data);
+      if (res.data.data.length == 0) {
+        that.setData({
+          visiable: true
+        });
+        wx.stopPullDownRefresh();
+      } else {
+        that.setData({
+          circleList: that.data.circleList.concat(res.data.data),
+          currentPage: ++that.data.currentPage
+        });
+        var circleImageList=[];
+        for (var i = 0; i < that.data.circleList.length;i++ ){
+          if (that.data.circleList[i].appActive.activeImage != '' && that.data.circleList[i].appActive.activeImage != null){
+            var circleImageList = that.data.circleList[i].appActive.activeImage.split(',');
+            that.data.circleList[i].appActive.circleImageList = circleImageList;
+          }
+        }
+        console.log(that.data.circleList);
+      }
+
+    },
+    fail: function () {
+      console.log(res.data.data)
+      // message.show.call(that, {
+      //   content: '网络开小差了',
+      //   icon: 'offline',
+      //   duration: 3000
+      // })
+    }
+  })
+}
+
 module.exports = {
   fetchNewsClassList: fetchNewsClassList,
   fetchNewsList: fetchNewsList,
   fetchNewsDetail: fetchNewsDetail,
-  fetchLatestNewsList: fetchLatestNewsList
+  fetchLatestNewsList: fetchLatestNewsList,
+  fetchCircleList: fetchCircleList,
+  fetchLogin: fetchLogin
 }
