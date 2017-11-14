@@ -10,7 +10,7 @@ Page({
   },
   onLoad: function () {
     var that = this;
-    console.log(that)
+    // console.log(that)
     if (app.globalData.appUserId){
       fetch.fetchCircleList(config.apiList.circleListUrl, { appUserId: app.globalData.appUserId}, that)
       
@@ -48,10 +48,17 @@ Page({
       scrollTop: this.data.scrollTop + 10
     })
   },
-  viewNewsDetail: function (e) {
+  circleVote: function (e){
+    var that = this;
+    console.log(app.globalData.appUserId)
+    console.log(e)
+    var activeId = e.currentTarget.dataset.activeid;
+    fetch.fetchCircleVote(config.apiList.circleVoteUrl, {appUserId: app.globalData.appUserId,activeId:activeId}, that)
+  },
+  viewCircleDetail: function (e) {
     var data = e.currentTarget.dataset;
     wx.navigateTo({
-      url: '../newsDetail/newsDetail?id=' + data.id,
+      url: '../circleDetail/circleDetail?id=' + data.id,
     })
   }
 })

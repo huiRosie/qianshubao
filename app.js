@@ -19,7 +19,7 @@ App({
           // 获取用户信息
           wx.getUserInfo({
             success: res => {
-              console.log(res.userInfo);
+              // console.log(res.userInfo);
               that.globalData.userInfo = res.userInfo;
               // 可以将 res 发送给后台解码出 unionId
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
@@ -40,7 +40,7 @@ App({
   initStorage:function(){
     wx.getStorageInfo({
       success: function(res) {
-        console.log(res);
+        // console.log(res);
         var personInfo = {
           nickName: '',
           gender: '',

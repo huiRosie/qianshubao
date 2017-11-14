@@ -1,0 +1,126 @@
+<view class='circleDetail'>
+  <!--原创动态  -->
+  <view wx:if="{{circleDetail.activeType=='original'}}" class='circleItem'>
+    <view class='circleItemTop'>
+      <image class='circleAvatorImg' src='{{circleDetail.avator}}' />
+      <view class='circleItemTopRight'>
+        <view class='circleItemName'>{{circleDetail.userName}}</view>
+        <view class='circlrItemInfo'>
+          <text wx:if="{{circleDetail.company != null}}">{{circleDetail.company}} </text> 
+          <text wx:if="{{circleDetail.company == null}}">某公司 </text> 
+          <text wx:if="{{circleDetail.positional != null}}"> {{circleDetail.positional}}</text>
+          <text wx:if="{{circleDetail.positional == null}}"> 某员工</text>
+        </view> 
+      </view>
+    </view>
+    <view class='circleItemContent'>
+      <text>{{circleDetail.activeContent}}</text>
+    </view>
+    <view wx:if="{{circleDetail.activeContent.length>200}}" class='circleItemContentBtn'>全文</view>
+    <view wx:if="{{circleDetail.circleImgList != ''}}" class='imageBox'>
+      <block wx:for="{{circleDetail.circleImgList}}" wx:for-item="circleImageItem" wx:key="circleImgList" >
+        <image wx:if="{{circleDetail.circleImgList.length==1}}" style='width:448rpx;height:448rpx;' class='circleItemImg' src='{{circleImageItem}}' />
+        <image wx:if="{{circleDetail.circleImgList.length>1&&circleDetail.circleImgList.length<=4}}" style='width:224rpx;height:224rpx;float:left;display:block;margin:5rpx;' class='circleItemImg' src='{{circleImageItem}}' />
+        <image wx:if="{{circleDetail.circleImgList.length>4}}" style='width:224rpx;height:224rpx;float:left;display:block;margin:2rpx;' class='circleItemImg' src='{{circleImageItem}}' />
+      </block>
+    </view>
+    <view wx:if="{{circleDetail.voteUsers !=null&&circleDetail.voteUsers !=''}}" class='voteUsers'>
+      <image src='../../icons/images/ic_small_thumb_copy_2.png' />
+      <view class='voteUsersList'>{{circleDetail.voteUsers}}点赞了</view>
+    </view>
+    <view class='circleItemCommentList'>
+      <block wx:for="{{circleItem.comments}}" wx:for-item="circleCommentsItem" wx:key="circleCommentsList" >
+        <view wx:if="{{circleCommentsItem.commentType=='comment'}}" class='circleItemCommen'>
+          <text class='circleItemCommenName'>{{circleCommentsItem.commentUserName}}：</text>
+          <text class='circleItemCommenText'>{{circleCommentsItem.commentContent}}</text>
+        </view>
+        <view wx:if="{{circleCommentsItem.commentType=='reply'}}" class='circleItemCommen'>
+          <text class='circleItemCommenOwner'>{{circleCommentsItem.commentUserName}} </text>回复
+          <text class='circleItemCommenName'>{{circleCommentsItem.replyUserName}}：</text>
+          <text class='circleItemCommenText'>{{circleCommentsItem.commentContent}}</text>
+        </view>
+      </block>
+    </view>
+    <view wx:if="{{circleDetail.commentCount>3}}"  class='circleItemCommenBtn'>查看全部{{circleDetail.commentCount}}条评论</view>
+    <view class='circleItemBottom'>
+      <view class='circleItemTime'>3小时前</view>
+      <view class='circleItemOperate'>
+        <view class='circleItemLike circleItemOperateItem'>
+          <image wx:if="{{circleDetail.isVote == 1}}" src='../../icons/images/fill.png' />
+          <image wx:if="{{circleDetail.isVote == 0}}" src='../../icons/images/icCircleThumbCopy4.png' />
+          <text class='circleItemLikeNum'>{{circleDetail.voteCount}}</text>
+        </view>
+        <view class='circleItemReview circleItemOperateItem'>
+          <image src='../../icons/images/icComment.png' />
+          <text class='circleItemReviewNum'>{{circleDetail.commentCount}}</text>
+        </view>
+        <view class='circleItemTranspond circleItemOperateItem'>
+          <image src='../../icons/images/icForwardCopy6.png' />
+          <text class='circleItemTranspondNum'>{{circleDetail.reprintCount}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--转发动态  -->
+  <view wx:if="{{circleDetail.activeType=='reprint'}}" class='circleItem'>
+    <view class='circleItemTop'>
+      <image class='circleAvatorImg' src='{{circleDetail.avator}}' />
+      <view class='circleItemTopRight'>
+        <view class='circleItemName'>{{circleDetail.userName}}</view>
+        <view class='circlrItemInfo'>{{circleDetail.company}} {{circleDetail.positional}}</view> 
+      </view>
+    </view>
+    <view class='circleRepritTop'>
+      {{circleDetail.reprintContent}}
+    </view>
+    <view class='circleRepritContent'>
+      <view class='circleItemContent'>
+        <text>{{circleDetail.activeContent}}</text>
+      </view>
+      <!-- <view class='circleItemContentBtn'>全文</view> -->
+      <view wx:if="{{circleDetail.circleImgList != ''}}" class='imageBox'>
+        <block wx:for="{{circleDetail.circleImgList}}" wx:for-item="circleImageItem" wx:key="circleImgList" >
+        <image wx:if="{{circleDetail.circleImgList.length==1}}" style='width:448rpx;height:448rpx;' class='circleItemImg' src='{{circleImageItem}}' />
+        <image wx:if="{{circleDetail.circleImgList.length>1}}" style='width:214rpx;height:214rpx;float:left;display:block;margin:5rpx;' class='circleItemImg' src='{{circleImageItem}}' />
+        </block>
+      </view>
+    </view>
+    
+    <view wx:if="{{circleDetail.voteUsers !=null&&circleDetail.voteUsers !=''}}" class='voteUsers'>
+      <image src='../../icons/images/ic_small_thumb_copy_2.png' />
+      <view class='voteUsersList'>{{circleDetail.voteUsers}}点赞了</view>
+    </view>
+    <view class='circleItemCommentList'>
+      <block wx:for="{{circleItem.comments}}" wx:for-item="circleCommentsItem" wx:key="circleCommentsList" >
+        <view wx:if="{{circleCommentsItem.commentType=='comment'}}" class='circleItemCommen'>
+          <text class='circleItemCommenName'>{{circleCommentsItem.commentUserName}}：</text>
+          <text class='circleItemCommenText'>{{circleCommentsItem.commentContent}}</text>
+        </view>
+        <view wx:if="{{circleCommentsItem.commentType=='reply'}}" class='circleItemCommen'>
+          <text class='circleItemCommenOwner'>{{circleCommentsItem.commentUserName}} </text>回复
+          <text class='circleItemCommenName'>{{circleCommentsItem.replyUserName}}：</text>
+          <text class='circleItemCommenText'>{{circleCommentsItem.commentContent}}</text>
+        </view>
+      </block>
+    </view>
+    <view wx:if="{{circleDetail.commentCount>3}}"  class='circleItemCommenBtn'>查看全部{{circleDetail.commentCount}}条评论</view>
+    <view class='circleItemBottom'>
+      <view class='circleItemTime'>3小时前</view>
+      <view class='circleItemOperate'>
+        <view class='circleItemLike circleItemOperateItem'>
+          <image wx:if="{{circleDetail.isVote == 1}}" src='../../icons/images/fill.png' />
+          <image data-activeid='{{circleDetail.activeId}}' bindtap='circleVote' wx:if="{{circleDetail.isVote == 0}}" src='../../icons/images/icCircleThumbCopy4.png' />
+          <text class='circleItemLikeNum'>{{circleDetail.voteCount}}</text>
+        </view>
+        <view class='circleItemReview circleItemOperateItem'>
+          <image src='../../icons/images/icComment.png' />
+          <text class='circleItemReviewNum'>{{circleDetail.commentCount}}</text>
+        </view>
+        <view class='circleItemTranspond circleItemOperateItem'>
+          <image src='../../icons/images/icForwardCopy6.png' />
+          <text class='circleItemTranspondNum'>{{circleDetail.reprintCount}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,7 +1,6 @@
 <template name="circleList">
-  <block wx:for="{{circleList}}" wx:key="circleList" wx:for-item="circleItem"  >
-  <!--原创动态  -->
-    <view wx:if="{{circleItem.appActive.activeType=='original'}}" class='circleItem'>
+  <block wx:for="{{circleList}}" wx:key="circleList" wx:for-item="circleItem" >
+    <view class='circleItem'>
       <view class='circleItemTop'>
         <image class='circleAvatorImg' src='{{circleItem.appActive.avator}}' />
         <view class='circleItemTopRight'>
@@ -14,79 +13,38 @@
           </view> 
         </view>
       </view>
-      <view class='circleItemContent'>
-        <text>{{circleItem.appActive.activeContent}}</text>
-      </view>
-      <view wx:if="{{circleItem.appActive.activeContent.length>200}}" class='circleItemContentBtn'>全文</view>
-      <view wx:if="{{circleItem.appActive.circleImageList != ''}}" class='imageBox'>
-        <block wx:for="{{circleItem.appActive.circleImageList}}" wx:for-item="circleImageItem" wx:key="circleImageList" >
-         <image wx:if="{{circleItem.appActive.circleImageList.length==1}}" style='width:448rpx;height:448rpx;' class='circleItemImg' src='{{circleImageItem}}' />
-         <image wx:if="{{circleItem.appActive.circleImageList.length>1&&circleItem.appActive.circleImageList.length<=4}}" style='width:224rpx;height:224rpx;float:left;display:block;margin:5rpx;' class='circleItemImg' src='{{circleImageItem}}' />
-         <image wx:if="{{circleItem.appActive.circleImageList.length>4}}" style='width:224rpx;height:224rpx;float:left;display:block;margin:2rpx;' class='circleItemImg' src='{{circleImageItem}}' />
-        </block>
-      </view>
-      <view wx:if="{{circleItem.appActive.voteUsers !=null&&circleItem.appActive.voteUsers !=''}}" class='voteUsers'>
-        <image src='../../icons/images/ic_small_thumb_copy_2.png' />
-        <view class='voteUsersList'>{{circleItem.appActive.voteUsers}}点赞了</view>
-      </view>
-      <view class='circleItemCommentList'>
-        <block wx:for="{{circleItem.comments}}" wx:for-item="circleCommentsItem" wx:key="circleCommentsList" >
-          <view wx:if="{{circleCommentsItem.commentType=='comment'}}" class='circleItemCommen'>
-            <text class='circleItemCommenName'>{{circleCommentsItem.commentUserName}}：</text>
-            <text class='circleItemCommenText'>{{circleCommentsItem.commentContent}}</text>
-          </view>
-          <view wx:if="{{circleCommentsItem.commentType=='reply'}}" class='circleItemCommen'>
-            <text class='circleItemCommenOwner'>{{circleCommentsItem.commentUserName}} </text>回复
-            <text class='circleItemCommenName'>{{circleCommentsItem.replyUserName}}：</text>
-            <text class='circleItemCommenText'>{{circleCommentsItem.commentContent}}</text>
-          </view>
-        </block>
-      </view>
-      <view wx:if="{{circleItem.appActive.commentCount>3}}"  class='circleItemCommenBtn'>查看全部{{circleItem.appActive.commentCount}}条评论</view>
-      <view class='circleItemBottom'>
-        <view class='circleItemTime'>3小时前</view>
-        <view class='circleItemOperate'>
-          <view class='circleItemLike circleItemOperateItem'>
-            <image wx:if="{{circleItem.appActive.isVote == 1}}" src='../../icons/images/fill.png' />
-            <image wx:if="{{circleItem.appActive.isVote == 0}}" src='../../icons/images/icCircleThumbCopy4.png' />
-            <text class='circleItemLikeNum'>{{circleItem.appActive.voteCount}}</text>
-          </view>
-          <view class='circleItemReview circleItemOperateItem'>
-            <image src='../../icons/images/icComment.png' />
-            <text class='circleItemReviewNum'>{{circleItem.appActive.commentCount}}</text>
-          </view>
-          <view class='circleItemTranspond circleItemOperateItem'>
-            <image src='../../icons/images/icForwardCopy6.png' />
-            <text class='circleItemTranspondNum'>{{circleItem.appActive.reprintCount}}</text>
-          </view>
-        </view>
-      </view>
-    </view>
-    <!--转发动态  -->
-    <view wx:if="{{circleItem.appActive.activeType=='reprint'}}" class='circleItem'>
-      <view class='circleItemTop'>
-        <image class='circleAvatorImg' src='{{circleItem.appActive.avator}}' />
-        <view class='circleItemTopRight'>
-          <view class='circleItemName'>{{circleItem.appActive.userName}}</view>
-          <view class='circlrItemInfo'>{{circleItem.appActive.company}} {{circleItem.appActive.positional}}</view> 
-        </view>
-      </view>
-      <view class='circleRepritTop'>
-        {{circleItem.appActive.reprintContent}}
-      </view>
-      <view class='circleRepritContent'>
-        <view class='circleItemContent'>
+      <!--原创动态  -->
+      <view wx:if="{{circleItem.appActive.activeType=='original'}}">
+        <view data-id='{{circleItem.appActive.activeId}}' catchtap='viewCircleDetail' class='circleItemContent'>
           <text>{{circleItem.appActive.activeContent}}</text>
         </view>
-        <!-- <view class='circleItemContentBtn'>全文</view> -->
+        <view wx:if="{{circleItem.appActive.activeContent.length>200}}" class='circleItemContentBtn'>全文</view>
         <view wx:if="{{circleItem.appActive.circleImageList != ''}}" class='imageBox'>
           <block wx:for="{{circleItem.appActive.circleImageList}}" wx:for-item="circleImageItem" wx:key="circleImageList" >
           <image wx:if="{{circleItem.appActive.circleImageList.length==1}}" style='width:448rpx;height:448rpx;' class='circleItemImg' src='{{circleImageItem}}' />
-          <image wx:if="{{circleItem.appActive.circleImageList.length>1}}" style='width:214rpx;height:214rpx;float:left;display:block;margin:5rpx;' class='circleItemImg' src='{{circleImageItem}}' />
+          <image wx:if="{{circleItem.appActive.circleImageList.length>1&&circleItem.appActive.circleImageList.length<=4}}" style='width:224rpx;height:224rpx;float:left;display:block;margin:5rpx;' class='circleItemImg' src='{{circleImageItem}}' />
+          <image wx:if="{{circleItem.appActive.circleImageList.length>4}}" style='width:224rpx;height:224rpx;float:left;display:block;margin:2rpx;' class='circleItemImg' src='{{circleImageItem}}' />
           </block>
         </view>
       </view>
-      
+      <!--转发动态  -->
+      <view wx:if="{{circleItem.appActive.activeType=='reprint'}}" >
+        <view data-id='{{circleItem.appActive.activeId}}' catchtap='viewCircleDetail' class='circleRepritTop'>
+          {{circleItem.appActive.reprintContent}}
+        </view>
+        <view class='circleRepritContent'>
+          <view data-id='{{circleItem.appActive.activeId}}' catchtap='viewCircleDetail' class='circleItemContent'>
+            <text>{{circleItem.appActive.activeContent}}</text>
+          </view>
+          <!-- <view class='circleItemContentBtn'>全文</view> -->
+          <view wx:if="{{circleItem.appActive.circleImageList != ''}}" class='imageBox'>
+            <block wx:for="{{circleItem.appActive.circleImageList}}" wx:for-item="circleImageItem" wx:key="circleImageList" >
+            <image wx:if="{{circleItem.appActive.circleImageList.length==1}}" style='width:448rpx;height:448rpx;' class='circleItemImg' src='{{circleImageItem}}' />
+            <image wx:if="{{circleItem.appActive.circleImageList.length>1}}" style='width:214rpx;height:214rpx;float:left;display:block;margin:5rpx;' class='circleItemImg' src='{{circleImageItem}}' />
+            </block>
+          </view>
+        </view>
+      </view>
       <view wx:if="{{circleItem.appActive.voteUsers !=null&&circleItem.appActive.voteUsers !=''}}" class='voteUsers'>
         <image src='../../icons/images/ic_small_thumb_copy_2.png' />
         <view class='voteUsersList'>{{circleItem.appActive.voteUsers}}点赞了</view>
@@ -108,7 +66,7 @@
       <view class='circleItemBottom'>
         <view class='circleItemTime'>3小时前</view>
         <view class='circleItemOperate'>
-          <view class='circleItemLike circleItemOperateItem'>
+          <view class='circleItemLike circleItemOperateItem' bindtap='circleVote'>
             <image wx:if="{{circleItem.appActive.isVote == 1}}" src='../../icons/images/fill.png' />
             <image wx:if="{{circleItem.appActive.isVote == 0}}" src='../../icons/images/icCircleThumbCopy4.png' />
             <text class='circleItemLikeNum'>{{circleItem.appActive.voteCount}}</text>

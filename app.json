@@ -4,7 +4,8 @@
     "pages/my/my",
     "pages/messages/messages",
     "pages/index/index",
-    "pages/newsDetail/newsDetail"
+    "pages/newsDetail/newsDetail",
+    "pages/circleDetail/circleDetail"
 
   ],
   "window":{
