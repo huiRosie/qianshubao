@@ -9,7 +9,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    newsDetail:[]
+    circleDetail:[],
+    circleImgList:[],
+    circleCommentsList:[]
   },
 
   /**
@@ -18,7 +20,8 @@ Page({
   onLoad: function (options) {
     var that = this;
     var activeId = options.id;
-    fetch.fetchCircleDetail(config.apiList.circleDetailUrl,{activeId:activeId},that)
+    fetch.fetchCircleDetail(config.apiList.circleDetailUrl, { activeId: activeId }, that);
+    fetch.fetchCircleCommentsList(config.apiList.circleCommentsListUrl,{activeId:activeId,numPerPage:99999},that);
   },
 
   /**

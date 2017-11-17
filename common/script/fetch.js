@@ -176,7 +176,7 @@ function fetchCircleList(url, datas, that) {
 }
 
 // 获取圈子详情
-function fetchCircleDetail(url,datas,that) {
+function fetchCircleDetail(url, datas, that) {
   // message.hide.call(that)
   wx.request({
     url: url,
@@ -186,16 +186,16 @@ function fetchCircleDetail(url,datas,that) {
       "Content-Type": "application/json,application/json"
     },
     success: function (res) {
+      var circleImgList = [];
       that.setData({
         circleDetail: res.data.data,
         // content: wxParse.wxParse('content', 'html', res.data.data.curr.content, that)
       })
-      var circleImgList = [];
       if (res.data.data.activeImage != '' && res.data.data.activeImage != null) {
         circleImgList = res.data.data.activeImage.split(',');
         that.data.circleDetail.circleImgList = circleImgList;
-        console.log(that.data.circleDetail);
       }
+      console.log(that.data.circleDetail);
       console.log(res.data.data)
       // wx.setNavigationBarTitle({
       //   title: res.data.data.title
@@ -205,11 +205,30 @@ function fetchCircleDetail(url,datas,that) {
       that.setData({
         newsDetail: '网络开小差了',
       })
-      // message.show.call(that, {
-      //   content: '网络开小差了',
-      //   icon: 'offline',
-      //   duration: 3000
-      // })
+    }
+  })
+}
+
+
+// 获取圈子评论列表
+function fetchCircleCommentsList(url, datas, that) {
+  wx.request({
+    url: url,
+    data: datas,
+    method: 'GET',
+    header: {
+      "Content-Type": "application/json,application/json"
+    },
+    success: function (res) {
+      console.log(res.data.data)
+      that.setData({
+        circleCommentsList: res.data.data,
+      })
+    },
+    fail: function () {
+      that.setData({
+        newsDetail: '网络开小差了',
+      })
     }
   })
 }
@@ -225,11 +244,6 @@ function fetchCircleVote(url, datas, that) {
     },
     fail: function () {
       console.log(res);
-      // message.show.call(that, {
-      //   content: '网络开小差了',
-      //   icon: 'offline',
-      //   duration: 3000
-      // })
     }
   })
 }
@@ -242,6 +256,7 @@ module.exports = {
   fetchLatestNewsList: fetchLatestNewsList,
   fetchCircleList: fetchCircleList,
   fetchCircleDetail: fetchCircleDetail,
+  fetchCircleCommentsList: fetchCircleCommentsList,
   fetchCircleVote: fetchCircleVote,
   fetchLogin: fetchLogin
 }

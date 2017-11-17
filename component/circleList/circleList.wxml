@@ -33,7 +33,7 @@
           {{circleItem.appActive.reprintContent}}
         </view>
         <view class='circleRepritContent'>
-          <view data-id='{{circleItem.appActive.activeId}}' catchtap='viewCircleDetail' class='circleItemContent'>
+          <view data-id='{{circleItem.appActive.reprintActiveId}}' catchtap='viewCircleDetail' class='circleItemContent'>
             <text>{{circleItem.appActive.activeContent}}</text>
           </view>
           <!-- <view class='circleItemContentBtn'>全文</view> -->
